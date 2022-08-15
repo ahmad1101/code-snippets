@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    /* Copy the code from here */
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
+  .main{
+    width: 100%;
+    height: auto; /* Given so it can automatically adjust according to the height of the cards */
+    display: flex;
+    flex-wrap: wrap; /* Given so the cards can automatically go down if the space ends in one line */
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Adjust this to change the background color */
+    padding: 20px;
+  }
+
+  .main .card{
+    height: 400px;
+    width: 23%; /* Given so it can adjust automatically adjust according to the width of your device. Change it if you want more or less width of the cards. */
+    background-color: black; /* Adjust this to change the background color of cards */
+    margin: 5px; /* Given to give distance between the cards. Adjust to give more or less distance */
+    box-shadow: 2px 2px 8px red;  /* This gives the underglow effect */
+  }
+
+  /* Copy the code till here */
+  /* For internal CSS, copy from style tag if you havent added them already */
+  /* For external CSS, copy from the mentioned area */
+  </style>
+  <title>Cards</title>
+</head>
+<body>
+
+<!-- Copy the code from here -->
+<div class="main"> <!-- This is the main container containing cards -->
+  <div class="card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+</div>
+
+<!-- Copy the code till here -->
+</body>
+</html>
