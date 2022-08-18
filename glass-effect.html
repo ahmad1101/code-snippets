@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass effect</title>
+    <style>
+
+        /* Copy the styling from here */
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .background{
+            background-color: #002D62; /* Adjust the background color here */
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* This comes in handy in cases where the width of the device is small and the cards cannot fit in */
+        }
+
+        .background .card{
+            width: 18%; /* Increase width and height if you want to increase the covered area */
+            height: 40%;
+            background-color: rgba(255,255,255,0.5); /*Adjust the last value for opacity. Higher the value, the more opaque and the lower the value more transparent */
+            /* The first three values in rgba are used to change the color. 255,255,255 is the rgb code for white color. You can easily find rgb values for all colors online */
+            margin: 6px; /* Adds gap between the cards */
+            border-radius: 15px; /* This makes the edges of the cards round */
+        }
+
+        /*Copy the styling till here */
+    </style>
+</head>
+<body>
+
+    <!-- You can demonstrate glass effect this way -->
+    <!-- Copy the code from here -->
+    <section class="background">
+
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </section>
+    <!-- Copy the code till here -->
+    <!-- Modify the code according to your needs. This is just for reference -->
+</body>
+</html>
