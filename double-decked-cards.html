@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Double decked cards</title>
+  <style>
+
+  /* Copy the styling from here */
+    *{
+      padding: 0;
+      margin: 0;
+    }
+
+    .main{
+      width: 100%;
+      height: 100vh;
+      background-color: #6CB4EE;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main .card{
+      width: 26%; /* Adjust the width and height of the card from here */
+      height: 60%;
+      background-color: white;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column; /* Used to stack the two inner divs vertically */
+    }
+
+    .main .card .top{
+      width: 100%;
+      height: 60%;
+      background-image: url('double-decked-card.jpg'); /* Adjust this to change the image */
+      background-position: center; /* Used to center the image according to the div */
+      background-size: cover; /* Used so that the image fits the size of the div perfectly */
+      background-repeat: no-repeat; /* Used so that in case the image size is smaller than the div size, it does not repeat */
+    }
+
+    .main .card .bottom{
+      width: 100%;
+      height: 40%;
+      border-top: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main .card .bottom p{
+      width: 70%; /* Done to slice the paragraph length according to the div size */
+    }
+    /* Copy the styling till here */
+  </style>
+</head>
+<body>
+<!-- Copy the code from here -->
+<section class="main"> <!-- Background section -->
+
+<div class="card"> <!-- Actual card starts from here -->
+  <!-- The two partitions are made here. Seperate divs are made and then stacked vertically -->
+  <div class="top">
+
+  </div>
+
+  <div class="bottom">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+
+</div>
+</section>
+
+<!-- Copy the code till here -->
+</body>
+</html>
