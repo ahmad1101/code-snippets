@@ -7,35 +7,43 @@
     <title>Form</title>
     <style>
 
+        /* Copy the styling from here */
         *{
             padding: 0;
             margin: 0;
         }
+
         body{
             overflow-x: hidden;
         }
+
         .slider-main{
             background-color: black;
             width: 300%;
             height: 100vh;
         }
+
         .slider-main .slider-inner{
             width: 100%;
             height: 100%;
             display: flex;
-            animation: slider-anim 20s infinite linear;
+            animation: slider-anim 20s infinite linear; /* This will run our animation */
             position: relative;
         }
+
         .slider-main .slider-inner .slider-image{
-            width: 33.5%;
+            width: 33.5%; 
             height: 100%;
         }
+
         .slider-main .slider-inner .slider-image img{
             width: 100%;
             height: 100%;
         }
 
-        @keyframes slider-anim{
+        /* @keyframes is used to create animations. The code we put in here will cause the sliding effect on our webpage */
+        @keyframes slider-anim{ /* Put the name we put in the animation rule in the div we want to animate */
+            /* For telling it what and when to do, we specify percentages and then put the relevant code there */
             0%{
                     left: 0px;
                 
@@ -47,25 +55,28 @@
                     left: -67%;
             }
         }
+        /* Copy the styling till here */
     </style>
 </head>
 <body>
     
-    <section class="slider-main">
-        <div class="slider-inner">
+    <!-- Copy the code from here -->
+    <section class="slider-main"> <!-- Main slider section -->
+        <div class="slider-inner"> <!-- This is where the magic happens -->
+            <!-- Seperate divs that span full screen length -->
             <div class="slider-image one">
                 <img src="slider-one.jpg" alt=""> 
             </div>
+
             <div class="slider-image two">
                  <img src="slider-two.jpg" alt=""> 
             </div>
+
             <div class="slider-image three">
                  <img src="slider-three.jpg" alt=""> 
             </div>
-            
-            
-            
         </div>
     </section>
+    <!-- Copy the code till here -->
 </body>
 </html>
