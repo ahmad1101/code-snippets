@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Navbar</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+  .navbar{
+    height: 100vh;
+    width: 15%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: dodgerblue;
+  }
+  .navbar ul{
+    list-style: none;
+    width: 100%;
+  }
+  .navbar ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+  }
+  .navbar ul li a:hover{
+    background-color: #118cc4;
+    color: white;
+  }
+  </style>
+</head>
+<body>
+ <nav class="navbar">
+  <ul>
+    <li>
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
+      <a href="">More</a>
+      <a href="" class="last">More</a>
+    </li>
+  </ul>
+ </nav>
+</body>
+</html>
